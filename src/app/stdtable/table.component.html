@@ -1,0 +1,32 @@
+
+
+    <table class="table table-bordered">
+        <thead>
+            <th>Sr. No.</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email ID</th>
+            <th>Contact No</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let std of studentArray; let i = index">
+                <td>{{i + 1}}</td>
+                <td>{{std.fname}}</td>
+                <td>{{std.lname}}</td>
+                <td>{{std.email}}</td>
+                <td>{{std.contact}}</td>
+            </tr>
+            <!-- <tr>
+                <td>Hari</td>
+                <td>Raut</td>
+                <td>hari@gmail.com</td>
+                <td>123456</td>
+            </tr>
+            <tr>
+                <td>Deepti</td>
+                <td>Jawlekar</td>
+                <td>deepti@gmail.com</td>
+                <td>987456</td>
+            </tr> -->
+        </tbody>
+    </table>

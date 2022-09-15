@@ -1,0 +1,9 @@
+<div class="container">
+    
+<app-child [msgFromParent]="msgForChild"></app-child>
+<hr>
+<app-child (childOut)="msgForParent($event)"></app-child>
+Response to Parent: 
+{{msgParent}}
+
+</div>

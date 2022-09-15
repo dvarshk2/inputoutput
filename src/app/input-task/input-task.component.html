@@ -1,0 +1,11 @@
+<h2 class="text-white text-center p-4">InputOutput Task2</h2>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6 offset-sm-3">            
+            <label >Please Enter Username</label>
+            <input type="text" [(ngModel)]="inputText" (input)="onInputHandler($event)">
+            <p>{{inputText}}</p>
+            <button class="btn btn-primary" [disabled]="iaDisabled" (click)="clickHandler()">Click</button>
+        </div>
+    </div>
+</div>

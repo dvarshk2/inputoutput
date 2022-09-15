@@ -1,0 +1,22 @@
+
+    <div class="form-group">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" class="form-control" [(ngModel)]="firstName">
+    </div>
+    <div class="form-group">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" class="form-control" [(ngModel)]="lastName">
+    </div>
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="text" id="emai" class="form-control" [(ngModel)]="eMail">
+    </div>
+    <div class="form-group">
+        <label for="contact">Contact</label>
+        <input type="text"  id="contact" class="form-control" [(ngModel)]="contactNo">
+    </div>
+    <div class="form-group text-right">
+        <input type="button" value="Add Info" 
+        (click)="onClickHandler()"
+        class="btn btn-warning" >
+    </div>
